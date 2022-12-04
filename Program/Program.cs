@@ -4,11 +4,6 @@
 // либо задать на старте выполнения алгоритма. При решении не рекомендуется
 // пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-// Примеры:
-// [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
-// [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
-// [“Russia”, “Denmark”, “Kazan”] → []
-
 string[] FindingSmallValues(string[] array, int num)
 {
     string newStringResult = String.Empty;
@@ -19,7 +14,6 @@ string[] FindingSmallValues(string[] array, int num)
     string[] newArray = newStringResult.Split(" ", StringSplitOptions.RemoveEmptyEntries);
     return newArray;
 }
-
 Console.Clear();
 Console.Write("Введите элементы строки через пробел: ");
 string input = (Console.ReadLine()!);
